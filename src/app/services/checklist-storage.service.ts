@@ -20,6 +20,8 @@ export class ChecklistStorageService {
 
   saveItem(input: string, checked: boolean = false) {
 
+    if(input.trim().length<=0) return
+
     let storedChecklist = localStorage.getItem(this.KEY)
 
     if(!storedChecklist){
@@ -59,7 +61,6 @@ export class ChecklistStorageService {
 
     localStorage.setItem(this.KEY, JSON.stringify(checklist))
 
-    console.log(`removing ${input} at index ${index}`)
     this._checklist.next(checklist)
 
   }

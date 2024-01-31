@@ -17,8 +17,8 @@ export class ChecklistFormComponent {
   }
 
   addItem(){
-    console.log(`adding item ${this.textInputValue}`)
     this.cls.saveItem(this.textInputValue)
+    this.textInputValue = ''
   }
 
 }

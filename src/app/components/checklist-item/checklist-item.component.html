@@ -1,6 +1,6 @@
 <ul>
   <li *ngFor="let item of checklist | async; let i = index" [ngClass]="item.checkbox? 'done':'not-done'">
-	{{item.text}}
+	<label>{{item.text}}</label>
   <input type="checkbox"
     [checked]="item.checkbox"
     (change)="checkItem(item.checkbox, item.text)">

@@ -1,4 +1,19 @@
 #home-main {
-  display: flex;
   gap: 10px;
+}
+/* styles.css (or any global stylesheet) */
+body, html {
+  height: 100%; /* Ensure full height of the viewport */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-color: #f0f0f0; /* Set background color for the entire page */
+}
+
+#home-main {
+  max-width: 400px;
+  border: 2px solid #333; /* Add border to the div */
+  background-color: white; /* Set background color for the div */
+  padding: 20px; /* Add padding to the div */
 }

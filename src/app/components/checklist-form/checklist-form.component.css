@@ -1,0 +1,21 @@
+/* input-form.component.css */
+input[type="text"] {
+  width: 300px;
+  padding: 8px; /* Add padding to the input field */
+  border: 1px solid #ccc; /* Add a border to the input field */
+  border-radius: 4px; /* Add border radius for rounded corners */
+  margin-right: 8px; /* Add space between input field and button */
+}
+
+button[type="submit"] {
+  padding: 8px 16px; /* Add padding to the button */
+  background-color: #007bff; /* Set background color */
+  color: white; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius for rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darken background color on hover */
+}
