@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let item of checklist | async; let i = index" [ngClass]="item.checkbox? 'done':'not-done'">
+	{{item.text}}
+  <input type="checkbox"
+    [checked]="item.checkbox"
+    (change)="checkItem(item.checkbox, item.text)">
+
+  <button (click)="removeItem(item.text)">X</button>
+  </li>
+</ul>
